@@ -2,24 +2,27 @@ import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const SignInCard = () => {
-  const baseURL = "https://idbdev.com/motion2/public/api/login";
+const baseURL = "https://idbdev.com/motion2/public/api/login";
 
+const SignInCard = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = () => {
-    axios
-      .post(baseURL, {
-        email: email,
-        password: password,
-      })
-      .then((response) => {
-        console.log("response is: ", response.data);
-      });
+  const data = {
+    email,
+    password,
   };
 
-  console.log(email, password);
+  const handleSubmit = async () => {
+    await axios
+      .post(baseURL, data)
+      .then(({ res }) => {
+        console.log("response is: ", res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   return (
     <div>
