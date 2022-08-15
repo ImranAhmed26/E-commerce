@@ -40,7 +40,7 @@ const SignInCard = () => {
           </div>
           <div className="my-3">
             <input
-              className="p-2 rounded w-full"
+              className="p-2 rounded w-full "
               placeholder="Password"
               required
               onChange={(e) => {
