@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
-import ProductPage from "../components/productPages";
+import ProductCard from "../components/product-card";
+import ProductPage from "../components/product-list";
+import Slide from "../components/slide";
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Slide />
       <ProductPage />
     </div>
   );
