@@ -1,6 +1,6 @@
 import Head from "next/head";
+
 import Navbar from "../components/navbar";
-import ProductCard from "../components/product-card";
 import ProductPage from "../components/product-list";
 import Slide from "../components/slide";
 
@@ -16,10 +16,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-gray-100">
-
-      <Navbar />
-      <Slide />
-      <ProductPage />
+        <Navbar />
+        <Slide />
+        <ProductPage />
       </div>
     </div>
   );

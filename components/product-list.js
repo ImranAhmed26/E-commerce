@@ -24,7 +24,7 @@ const ProductPage = () => {
         <div className="drop-shadow-md">Popular Products</div>
       </div>
       <div>
-        <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4  grid-flow-row max-w-4xl xl:max-w-6xl gap-x-3 mx-auto">
+        <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4  grid-flow-row max-w-4xl xl:max-w-6xl gap-x-3 gap-y-1 mx-auto px-8 lg:px-6">
           {products?.data.map((item, index) => {
             return (
               <div key={index} className="">
