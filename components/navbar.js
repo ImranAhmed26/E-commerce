@@ -15,7 +15,10 @@ const Navbar = () => {
                 />
               </div>
             </div>
-            <div className="cursor-pointer" onClick={() => Router.push("/login")}>
+            <div
+              className="cursor-pointer drop-shadow-sm hover:text-gray-300 duration-100 transition-all"
+              onClick={() => Router.push("/login")}
+            >
               Sign In
             </div>
           </div>

@@ -31,7 +31,7 @@ const ProductPage = () => {
                 <ProductCard
                   className=""
                   name={item.name}
-                  image={item.image}
+                  productImage={item.image}
                   price={item.regular_price}
                   sellPrice={item.regular_price}
                   stock={item.stock}
